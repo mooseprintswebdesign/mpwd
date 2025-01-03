@@ -1,0 +1,63 @@
+---
+import Button from '../components/Button.astro';
+---
+<section class="hero">
+  <div class="hero-content">
+    <!-- Left Section: Text and CTA -->
+    <div class="hero-text">
+      <h1>Mooseprints Web Design</h1>
+      <p>Custom websites for <span class="emphasis">small businesses</span> and <span class="emphasis">nonprofits</span> serving local communities.</p>
+      <Button href="#services" text="Services" type="primary" />
+      <Button href="#services" text="Book a consultation" type="secondary" />
+    </div>
+
+    <!-- Right Section: Image -->
+    <div class="hero-image">
+      <img src="/moose.png" alt="Moose silhouette" />
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: right;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+</style>

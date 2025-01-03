@@ -1,0 +1,43 @@
+---
+const { type = 'primary', href, text } = Astro.props;
+
+const buttonClass = type === 'primary' ? 'button-primary' : 'button-secondary';
+---
+
+<a href={href} class={buttonClass}>{text}</a>
+
+<style>
+/* Base Button Styles */
+a.button-primary,
+a.button-secondary {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Primary Button Styles */
+a.button-primary {
+  background-color: var(--emphasis);
+  color: white;
+  border: none;
+}
+
+a.button-primary:hover {
+  background-color: #005f99;
+}
+
+/* Secondary Button Styles */
+a.button-secondary {
+  background-color: #fff;
+  color: var(--emphasis);
+  border: 1px solid var(--emphasis);
+}
+
+a.button-secondary:hover {
+  background-color: #e0e0e0;
+}
+</style>
