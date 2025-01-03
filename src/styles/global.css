@@ -8,6 +8,7 @@
 	--accent: #2337ff;
 	--accent-dark: #000d8a;
 	--emphasis: #06585b;
+	--primary-background:#e3ebe9;
 	--black: 15, 18, 25;
 	--gray: 96, 115, 159;
 	--gray-light: 229, 233, 240;
@@ -35,7 +36,8 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: linear-gradient(var(--gray-gradient)) no-repeat;
+	background-color: var(--primary-background);
+	/* background: linear-gradient(var(--gray-gradient)) no-repeat; */
 	background-size: 100% 600px;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
@@ -44,7 +46,7 @@ body {
 	line-height: 1.7;
 }
 main {
-	width: 720px;
+	width: 1050px;
 	max-width: calc(100% - 2em);
 	margin: auto;
 	padding: 3em 1em;

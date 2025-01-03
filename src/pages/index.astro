@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Hero from '../components/Hero.astro';
+import Service from '../components/Service.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
@@ -15,6 +16,41 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<Header />
 		<Hero />
 		<main>
+			<section id="services">
+				<div class="mission-section">
+					<div class="mission-content">
+						<h2>Let's work together</h2>
+						<h2>to make a bigger impact</h2>
+						<p>
+							Mooseprint Web Design empowers <span class="emphasis">small businesses</span>, <span class="emphasis">nonprofits</span>, and <span class="emphasis">community-focused organizations</span> to tell their story with affordable hand-crafted websites. Whether you're running a local business, supporting underserved communities, or showcasing your talent as a local artist, we help you deliver your message effectively to achieve your mission.
+						</p>
+					</div>
+				</div>
+				<div class="service-container">
+					<Service
+						icon="/icons/website.svg"
+						heading="Website Design & Development"
+						checklist={[
+							"Custom website tailored to your specific needs",
+							"Responsive design for mobile and desktop",
+							"Unlimited revisions",
+							"SEO optimization to boost search engine visibility",
+							"Accessibility best practices for inclusivity",
+						]}
+					/>
+					<Service
+						icon="/icons/hosting.svg"
+						heading="Hosting & Maintenance"
+						checklist={[
+							"Reliable hosting at your own domain or sub-domain",
+							"Subscription-based maintenace for regular upkeep",
+							"Pay-per-update option for infrequent changes",
+							"M-F live technical support"
+						]}
+					/>
+				</div>
+			</section>
+
 			<h1>🧑‍🚀 Hello, Astronaut!</h1>
 			<p>
 				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
@@ -50,3 +86,19 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<Footer />
 	</body>
 </html>
+
+<style>
+	.service-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+@media (max-width: 720px) {
+	.service-container {
+		flex-wrap: wrap;
+	}
+}
+
+</style>
