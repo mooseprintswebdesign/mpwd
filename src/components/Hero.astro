@@ -7,8 +7,10 @@ import Button from '../components/Button.astro';
     <div class="hero-text">
       <h1>Mooseprints Web Design</h1>
       <p>Custom websites for <span class="emphasis">small businesses</span> and <span class="emphasis">nonprofits</span> serving local communities.</p>
-      <Button href="#services" text="Services" type="primary" />
-      <Button href="#services" text="Book a consultation" type="secondary" />
+      <div class="hero-btns">
+        <Button href="#services" text="Services" type="primary" />
+        <Button href="#services" text="Book a consultation" type="secondary" />
+      </div>
     </div>
 
     <!-- Right Section: Image -->
@@ -60,4 +62,38 @@ import Button from '../components/Button.astro';
   border-radius: 8px;
 }
 
+@media (max-width: 768px) {
+  .hero-content{
+    flex-direction: column;
+  }
+  .hero-text {
+    text-align: center;
+  }
+  .hero-btns {
+    display: flex;
+    gap: .5rem;
+  }
+  .hero-image {
+    max-width: 60%;
+  }
+}
 </style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]');
+    buttons.forEach((button) => {
+      button.addEventListener('click', (event) => {
+        event.preventDefault();
+        const targetId = button.getAttribute('href');
+        const targetElement = targetId ? document.querySelector(targetId) : null;
+        if (targetElement instanceof HTMLElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: 'smooth',
+          });
+        }
+      });
+    });
+  });
+</script>
