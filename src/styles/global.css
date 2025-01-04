@@ -8,6 +8,7 @@
 	--accent: #2337ff;
 	--accent-dark: #000d8a;
 	--emphasis: #06585b;
+	--emphasis-bright: #008085;
 	--primary-background:#e3ebe9;
 	--black: 15, 18, 25;
 	--gray: 96, 115, 159;
@@ -94,6 +95,10 @@ p {
 }
 .emphasis {
 	color: var(--emphasis);
+	font-weight: 600;
+}
+.emphasis-bright {
+	color: var(--emphasis-bright);
 	font-weight: 600;
 }
 textarea {

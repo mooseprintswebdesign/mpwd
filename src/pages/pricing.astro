@@ -1,0 +1,346 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Button from '../components/Button.astro';
+import Addon from '../components/Addon.astro';
+import Checklist from '../components/Checklist.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+
+const websiteItems = [
+  {
+    title: "Basic 4-page website",
+    description: "Typically includes Home, About, Products/Services, and Contact pages — but you can choose whatever pages you need.",
+  },
+  {
+    title: "Responsive design for all devices",
+    description: "Designed to look great on desktop, tablet, and mobile.",
+  },
+  {
+    title: "Unlimited revisions",
+    description: "As many changes as you need until the final product is exactly what you want.",
+  },
+  {
+    title: "SEO optimization",
+    description: "Improved search engine visibility.",
+  },
+  {
+    title: "Accessibility best practices",
+    description: "Your website will follow accessibility guidelines to ensure all visitors can enjoy your site.",
+  },
+  {
+    title: "Integrated contact form",
+    description: "[Optional] Allow visitors to easily get in touch with you directly from your website.",
+  }
+];
+
+const basicHostingItems = [
+  {
+    title: "Domain registration",
+  },
+  {
+    title: "Daily monitoring",
+  },
+  {
+    title: "M-F technical support",
+  },
+  {
+    title: "Up to 1 hour of edits / month"
+  },
+  {
+    title: "1 blog post / month"
+  }
+]
+
+const premiumHostingItems = [
+  {
+    title: "Domain registration",
+  },
+  {
+    title: "Daily monitoring",
+  },
+  {
+    title: "M-F technical support",
+  },
+  {
+    title: "Up to 5 hour of edits / month"
+  },
+  {
+    title: "Unlimited blog posts"
+  }
+]
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE + ' - Pricing'} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main class="pricing-page">
+      <!-- Page Title -->
+      <h1>Pricing</h1>
+
+      <!-- CTA Section -->
+      <section class="cta-section">
+        <Button href="#" text="Book a consultation" type="primary" />
+        <p>Let's make sure my services are a good fit for your needs! Your first 30-minute consultation is 100% free with no pressure to commit. We'll chat about your goals and take a look at your existing website if you have one, and I'll suggest some ideas for where we can go next.</p>
+      </section>
+
+      <!-- Website Design & Development Section -->
+      <section class="pricing-section">
+        <h2>Website Design & Development</h2>
+        <p>Every website is <span class="emphasis">thoughtfully designed</span> and tailored to your unique needs. From the beginning, I take the time to understand your industry, brand and message, working closely with you to craft a clear plan that brings your vision to life. Throughout the development process, I offer <span class="emphasis">unlimited revisions</span> to ensure that the final product exceeds your expectations.</p>
+
+        <div class="design-layout">
+          <!-- Left Column -->
+          <div class="big-card">
+            <h4>$650 flat rate*</h4>
+            <p>Includes:</p>
+            <Checklist items={websiteItems} />
+            <p><i>* 10% discount for nonprofits</i></p>
+          </div>
+          
+          
+          <!-- Right Column -->
+          <div class="addons">
+            <h4>Add-ons</h4>
+            <Addon 
+              price="$150" 
+              title="Add a page" 
+              description="Add pages to your site, such as a portfolio or team page." 
+            />
+            <Addon 
+              price="$350" 
+              title="Add a blog" 
+              description="Add a blog to your site, including a blog feed and individual post pages." 
+            />
+            <Addon 
+              price="$20" 
+              title="Add duplicate pages" 
+              description="For repeated pages with similar content — for example, multiple products that each have their own page. $150 for the first page and $20 for each additional page." 
+            />
+            <div class="not-offered">
+              <h4>Services not offered</h4>
+              <ul class="not-offered-list">
+                <li>
+                  <strong>Account login and signup</strong>
+                </li>
+                <li>
+                  <strong>E-commerce and online ordering systems</strong> 
+                  <br>
+                  <span>Embedding PayPal payment or similar is possible.</span>
+                </li>
+                <li>
+                  <strong>Online booking systems</strong> 
+                  <br>
+                  <span>We can link to your external booking service.</span>
+                </li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- Hosting & Maintenance Section -->
+      <section class="pricing-section">
+        <h2>Hosting & Maintenance</h2>
+        <p>Hosting your own website and managing ongoing maintenance can be a hassle. I offer two subscription-based hosting & maintenance plans with month-to-month billing with the freedom to cancel or change plans at any time.</p>
+        <p>With either plan, you'll simply send me your edits whenever you need them and I'll take care of the rest, rendering your changes live on your website within 2 business days.</p> 
+        <p></p>When choosing a plan, consider how often you'll need to update your website. Small edits like changing text content or swapping out an image take under 30 minutes. More complicated edits like adding a page section, moving elements around can take an hour or more. Blog posts are not counted towards the edits limit of your plan.</p>
+        <p>Additional edits beyond your plan's limit are billed at a rate of $45/hour.</p>
+        <div class="hosting-layout">
+          <div class="card">
+            <h4>Free</h4>
+            <h5><span class="emphasis-bright">Host your website on your own terms</span></h5>
+            <p>Not everyone needs hosting and maintenance services! If you want to host your new website yourself, I'll pass the source code along to you and you'll take it from there.</p>
+          </div>
+          <div class="card">
+            <h4>$50/month</h4>
+            <h5><span class="emphasis-bright">Basic Hosting</span></h5>
+            <p>Perfect for websites that don't need frequent changes and simple blog sites.</p>
+            <Checklist items={basicHostingItems} />
+          </div>
+          <div class="card">
+            <h4>$150/month</h4>
+            <h5><span class="emphasis-bright">Premium Hosting</span></h5>
+            <p>Best for websites that need frequent updates and blogs that post more than once a month.
+            <Checklist items={premiumHostingItems} />
+          </div>
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </body>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .pricing-page {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .cta-button {
+      background-color: #007BFF;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    /* Pricing Sections */
+    .pricing-section {
+      margin-bottom: 3rem;
+    }
+
+    .pricing-section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .pricing-section p {
+      margin-bottom: 1.5rem;
+    }
+
+    /* Design & Development Layout */
+    .design-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .big-card {
+      background-color: #f9f9f9;
+      padding: 1.5rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    .big-card h4 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--emphasis-bright);
+    }
+
+    .big-card p {
+      font-size: 1.3rem;
+      margin: 0.5rem 0;
+    }
+
+    .big-card p i {
+      font-size: 1rem;
+      color: #555;
+      float: right;
+      margin-right: 0.5rem;
+    }
+
+    .addons {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .addon-card {
+      background-color: #f0f0f0;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    /* Hosting & Maintenance Layout */
+    .hosting-layout {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: #f9f9f9;
+      padding: 1.5rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    .card ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+      margin: 1rem 0;
+    }
+
+    .not-offered {
+  margin-top: .8rem;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.not-offered h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.not-offered-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.not-offered-list li {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.not-offered-list li::before {
+  content: '✖';
+  color: #cc0000;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0rem;
+}
+
+.not-offered-list strong {
+  font-weight: bold;
+  color: #333;
+}
+
+.not-offered-list span {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .design-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</html>

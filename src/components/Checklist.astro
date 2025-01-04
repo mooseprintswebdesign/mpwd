@@ -1,0 +1,54 @@
+---
+const { items } = Astro.props;
+---
+
+<ul class="checklist">
+  {items.map((item) => (
+    <li>
+      <div>
+        <span>{item.title}</span>
+        <i>{item.description}</i>
+      </div>
+    </li>
+  ))}
+</ul>
+
+<style>
+.checklist {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+      line-height: 1.6;
+    }
+
+    .checklist li {
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+
+    .checklist li::before {
+      content: '✔';
+      color: #00cc55;
+      font-size: 1.2rem;
+      margin-top: 0.2rem;
+      flex-shrink: 0;
+    }
+
+    .checklist li div {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.5;
+    }
+
+    .checklist li div span {
+      font-weight: bold;
+    }
+
+    .checklist li div i {
+      font-size: 1.2rem;
+      color: #555;
+      margin-top: 0.2rem;
+    }
+</style>

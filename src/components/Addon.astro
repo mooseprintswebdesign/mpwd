@@ -1,0 +1,49 @@
+---
+const { price, title, description } = Astro.props;
+---
+
+<div class="addon-card">
+  <h3>{price}</h3>
+  <div>
+    <span>{title}</span>
+    <i>{description}</i>
+  </div>
+</div>
+
+<style>
+  .addon-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-bottom: 1rem;
+  }
+
+  .addon-card h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--emphasis-bright);
+    margin: 0;
+    flex-shrink: 0;
+  }
+
+  .addon-card div {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+  }
+
+  .addon-card div span {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .addon-card div i {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 0.2rem;
+  }
+</style>
