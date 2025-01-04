@@ -4,6 +4,8 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Hero from '../components/Hero.astro';
 import Service from '../components/Service.astro';
+import Timeline from '../components/Timeline.astro';
+import Button from '../components/Button.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
@@ -52,6 +54,17 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 					/>
 				</div>
 			</section>
+			<Timeline />
+			<section class="cta">
+				<div class="cta-content">
+					<h2>Let's bring your vision to life!</h2>
+					<p>
+						Ready to create a website that showcases your passion and connects with your audience? 
+						Book a free consultation today and let’s make it happen together.
+					</p>
+					<Button href="#services" text="Book a consultation" type="secondary" />
+				</div>
+			</section>
 		</main>
 		<Footer />
 	</body>
@@ -69,4 +82,44 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	}
 }
 
+.cta {
+    padding: 4rem 2rem;
+    background-color: var(--emphasis);
+    color: #fff;
+		margin-top: 4rem;
+    text-align: center;
+  }
+
+  .cta-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+
+  .cta p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    color: #f9f9f9;
+  }
+
+
+	@media (max-width: 768px) {
+    .cta h2 {
+      font-size: 1.75rem;
+    }
+
+    .cta p {
+      font-size: 1rem;
+    }
+
+    .cta-button {
+      font-size: 0.9rem;
+    }
+  }
 </style>

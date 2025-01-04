@@ -1,128 +1,141 @@
 <section class="timeline">
-  <h2 class="timeline-title">Our Process</h2>
+  <h2 class="timeline-title">Steps to building</h2>
+  <h2>your perfect website</h2>
+  <p class="timeline-text">From our first call to the final delivery, you'll be involved every step of the way to ensure your vision is at the heart of every decision. With clear and frequent communication, we'll work together to create a website that drives results and reflects your mission.</p>
   <div class="timeline-container">
     <div class="timeline-step">
-      <div class="timeline-icon">📞</div>
-      <div class="timeline-content">
-        <h3>Initial Consultation</h3>
-        <p>Book a free 30-minute call to discuss your project and goals.</p>
+      <div class="timeline-node"></div>
+      <div class="timeline-card">
+        <h3>Initial consultation</h3>
+        <p>We'll have a free 30-minute call to discuss your project and goals, and take a look at your current website if you have one. We'll explore whether my services would be a good fit with no pressure to commit.</p>
       </div>
     </div>
     <div class="timeline-step">
-      <div class="timeline-icon">🔍</div>
-      <div class="timeline-content">
-        <h3>Research & Planning Phase</h3>
-        <p>I review your existing website (if applicable), analyze your field, and research competitor websites to craft a tailored plan.</p>
+      <div class="timeline-node"></div>
+      <div class="timeline-card">
+        <h3>Research & planning</h3>
+        <p>I'll review your website in depth if you have one (or any other informational materials), and research your field or cause. Based on my research and our initial consultation, I'll craft a detailed and specific plan for your new website. Expect about 3-5 days for this phase.</p>
       </div>
     </div>
     <div class="timeline-step">
-      <div class="timeline-icon">📋</div>
-      <div class="timeline-content">
-        <h3>Second Consultation</h3>
-        <p>I'll present the plan to you. If you’re happy, we move forward with a contract agreement.</p>
+      <div class="timeline-node"></div>
+      <div class="timeline-card">
+        <h3>Second consultation</h3>
+        <p>We'll have a second free 30-minute call to discuss the proposed website plan. Once you have made the decision to move forward — whether that's during our call or after — I'll send over a contract for your signature.</p>
       </div>
     </div>
     <div class="timeline-step">
-      <div class="timeline-icon">💻</div>
-      <div class="timeline-content">
-        <h3>Design & Development</h3>
-        <p>The first version of your website is created based on our agreed plan and design guidelines.</p>
+      <div class="timeline-node"></div>
+      <div class="timeline-card">
+        <h3>Design & development</h3>
+        <p>Once we're under contract, I'll begin building your website. You'll provide all text copy and images needed. During this time, I may reach out with questions, but otherwise will work independently until the revision phase.  Allow 2-3 weeks for an initial version to be completed.</p>
       </div>
     </div>
     <div class="timeline-step">
-      <div class="timeline-icon">🔄</div>
-      <div class="timeline-content">
-        <h3>Revision</h3>
-        <p>Unlimited revisions until you're happy, with clear communication through calls or email.</p>
+      <div class="timeline-node"></div>
+      <div class="timeline-card">
+        <h3>Revisions</h3>
+        <p>Once the initial version of the website is complete, we'll schedule another call or communicate via email to begin revisions. I offer unlimited revisions until you're happy with the final product.</p>
       </div>
     </div>
     <div class="timeline-step">
-      <div class="timeline-icon">💳</div>
-      <div class="timeline-content">
-        <h3>Transaction & Subscription</h3>
-        <p>Once the payment is complete, the website is delivered. We can also discuss add-ons like hosting and maintenance.</p>
+      <div class="timeline-node"></div>
+      <div class="timeline-card">
+        <h3>Transaction & subscription</h3>
+        <p>Once you've given the green light on the final product, I'll send an invoice for the work based on our contract. As soon as payment has been received, I'll deliver the source code for the website. At this time, you may decide if you'd like to subscribe to an optional hosting & maintenance plan.</p>
       </div>
     </div>
   </div>
 </section>
 
 <style>
-  /* Base Styles */
+/* General Timeline Styles */
 .timeline {
-  padding: 2rem;
-  background-color: #f9f9f9;
+  padding: 2rem 1rem;
   font-family: Arial, sans-serif;
 }
 
 .timeline-title {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #333;
+  margin-top: 2rem;
+}
+
+.timeline-text {
+  margin: 2rem 0 4rem 0;
 }
 
 .timeline-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
-  position: relative;
+  gap: 1rem; /* Reduced gap between steps */
 }
 
 .timeline-container::before {
   content: '';
   position: absolute;
-  width: 4px;
-  height: 100%;
-  background-color: #007acc;
+  top: 0;
+  bottom: 0;
   left: 50%;
+  width: 4px;
+  background-color: var(--emphasis);
   transform: translateX(-50%);
   z-index: 0;
 }
 
+/* Timeline Step */
 .timeline-step {
+  position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
-  gap: 1rem;
-  max-width: 400px;
+  width: 100%;
+  margin: 0;
+  max-width: 800px;
+}
+
+.timeline-node {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border: 4px solid var(--emphasis-bright);
+  border-radius: 50%;
   z-index: 1;
 }
 
-.timeline-step:nth-child(even) {
-  align-items: flex-end;
-  text-align: right;
+.timeline-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  border: 1px solid var(--emphasis);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 53%;
+  z-index: 1;
 }
 
-.timeline-step:nth-child(odd) {
-  align-items: flex-start;
-  text-align: left;
-}
-
-.timeline-icon {
-  width: 50px;
-  height: 50px;
-  background-color: #ffffff;
-  border: 2px solid #007acc;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  color: #007acc;
-  z-index: 2;
-}
-
-.timeline-content h3 {
+.timeline-card h3 {
   font-size: 1.25rem;
-  color: #007acc;
+  color: var(--emphasis-bright);
   margin-bottom: 0.5rem;
 }
 
-.timeline-content p {
+.timeline-card p {
   font-size: 1rem;
   color: #555;
+}
+
+.timeline-step:nth-child(odd) .timeline-card {
+  margin-right: auto;
+  transform: translateX(-15%); /* Closer to the node */
+  text-align: right;
+}
+
+.timeline-step:nth-child(even) .timeline-card {
+  margin-left: auto;
+  transform: translateX(15%); /* Closer to the node */
+  text-align: left;
 }
 
 /* Responsive Design */
@@ -131,11 +144,20 @@
     left: 20px;
   }
 
-  .timeline-step {
-    align-items: flex-start;
+  .timeline-node {
+    left: 20px;
+    transform: translateX(0);
+  }
+
+  .timeline-card {
+    width: calc(100% - 2rem);
+    transform: none;
     text-align: left;
-    padding-left: 50px;
+  }
+
+  .timeline-step:nth-child(odd) .timeline-card,
+  .timeline-step:nth-child(even) .timeline-card {
+    margin: 0;
   }
 }
-
 </style>
