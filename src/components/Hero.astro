@@ -9,7 +9,7 @@ import Button from '../components/Button.astro';
       <p>Custom websites for <span class="emphasis">small businesses</span> and <span class="emphasis">nonprofits</span> serving local communities.</p>
       <div class="hero-btns">
         <Button href="#services" text="Services" type="primary" />
-        <Button href="https://calendly.com/mooseprintswebdesign/initial-consultation" text="Book a consultation" type="secondary" />
+        <Button href="https://calendly.com/mooseprintswebdesign/initial-consultation" text="Book a consultation" type="secondary" target="_blank" />
       </div>
     </div>
 
@@ -71,6 +71,7 @@ import Button from '../components/Button.astro';
   }
   .hero-btns {
     display: flex;
+    justify-content: center;
     gap: .5rem;
   }
   .hero-image {
