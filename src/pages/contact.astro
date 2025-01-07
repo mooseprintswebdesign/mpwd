@@ -41,7 +41,7 @@ const name = "Mooseprints Web Design";
             <input type="tel" id="phone" name="phone" />
             
             <fieldset>
-							<legend>Preferred contact method</legend>
+							<legend>Preferred contact method<span class="required">*</span></legend>
 							<div>
 								<input type="radio" id="contact-email" name="preferredContact" value="email" required />
 								<label for="contact-email">Email</label>
@@ -138,9 +138,11 @@ const name = "Mooseprints Web Design";
     margin-right: 0.5rem;
   }
 
-  fieldset label {
-    font-size: 1rem;
+  fieldset label,
+  .contact-form label {
+    font-size: 20px;
     cursor: pointer;
+    font-weight: bold;
   }
 
 	.contact-form input[type="text"],
