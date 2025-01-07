@@ -5,7 +5,10 @@ import { SITE_TITLE } from '../consts';
 
 <header>
 	<nav>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
+		<div class="left-nav-links">
+			<img class="nav-moose" src="/moose.png" alt="Moose silhouette" width="50" height="50" />
+			<h2><a href="/">{SITE_TITLE}</a></h2>
+		</div class="left-nav-links">
 		<button id="hamburger-menu" class="hamburger-menu" aria-label="Toggle navigation">
 			<span></span>
 			<span></span>
@@ -57,6 +60,17 @@ import { SITE_TITLE } from '../consts';
 	}
 	nav a.active {
 		border-bottom-color: var(--accent);
+	}
+
+	.left-nav-links {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.nav-moose {
+		padding: 1rem 0;
+		margin: 0 .5rem;
 	}
 	.right-nav-links {
 		display: flex;
