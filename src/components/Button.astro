@@ -1,10 +1,10 @@
 ---
-const { type = 'primary', href, text, target } = Astro.props;
+const { type = 'primary', href, text, target, ariaLabel } = Astro.props;
 
 const buttonClass = type === 'primary' ? 'button-primary' : 'button-secondary';
 ---
 
-<a href={href} target={target} class={buttonClass}>{text}</a>
+<a href={href} target={target} class={buttonClass} aria-label={ariaLabel}>{text}</a>
 
 <style>
 /* Base Button Styles */
