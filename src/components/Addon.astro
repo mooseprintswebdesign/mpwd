@@ -2,11 +2,11 @@
 const { price, title, description } = Astro.props;
 ---
 
-<div class="addon-card">
-  <h3>{price}</h3>
+<div class="addon-card" role="region" aria-labelledby="addon-card-title" aria-describedby="addon-card-description">
+  <h3 id="addon-card-title">{price}</h3>
   <div>
-    <span>{title}</span>
-    <i>{description}</i>
+    <span id="addon-card-name">{title}</span>
+    <i id="addon-card-description">{description}</i>
   </div>
 </div>
 

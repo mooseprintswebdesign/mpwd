@@ -18,48 +18,52 @@ const name = "Mooseprints Web Design";
 		<Header />
 		<main>
 			<section class="contact-section">
-				<div class="contact-intro">
-					<h2>Let's get in touch!</h2>
-					<p>Interested but not quite ready to set up an initial consultation?</p>
-					<p>Send me a message with any questions you have and I'll get back to you as soon as possible.</p>
-				</div>
-				<div class="direct-contact">
-					<p>{name}</p>
-					<p><a href={`mailto:${email}`}>{email}</a></p>
-					<p><span class="location-icon">📍</span> {location}</p>
-				</div>
-				<div class="contact-container">
+        <div class="contact-intro">
+          <h2>Let's get in touch!</h2>
+          <p>Interested but not quite ready to set up an initial consultation?</p>
+          <p>Send me a message with any questions you have and I'll get back to you as soon as possible.</p>
+        </div>
+      
+        <div class="direct-contact">
+          <p>{name}</p>
+          <p><a href={`mailto:${email}`}>{email}</a></p>
+          <p><span class="location-icon" aria-label="Location">📍</span> {location}</p>
+        </div>
+      
+        <div class="contact-container">
           <!-- Contact Form -->
-          <form id="contactForm" class="contact-form">
-            <label for="name">Name<span class="required">*</span></label>
-            <input type="text" id="name" name="from_name" required />
+          <form id="contactForm" class="contact-form" aria-labelledby="contactFormTitle">
+            <h3 id="contactFormTitle" class="sr-only">Contact Form</h3> <!-- Screen Reader Only Heading -->
             
-            <label for="email">Email<span class="required">*</span></label>
-            <input type="email" id="email" name="from_email" required />
-            
-            <label for="phone">Phone</label>
+            <label for="name" aria-label="Enter your name">Name<span class="required">*</span></label>
+            <input type="text" id="name" name="from_name" required aria-required="true" />
+      
+            <label for="email" aria-label="Enter your email">Email<span class="required">*</span></label>
+            <input type="email" id="email" name="from_email" required aria-required="true" />
+      
+            <label for="phone" aria-label="Enter your phone (optional)">Phone</label>
             <input type="tel" id="phone" name="phone" />
-            
+      
             <fieldset>
-							<legend>Preferred contact method<span class="required">*</span></legend>
-							<div>
-								<input type="radio" id="contact-email" name="preferredContact" value="email" required />
-								<label for="contact-email">Email</label>
-							</div>
-							<div>
-								<input type="radio" id="contact-phone" name="preferredContact" value="phone" />
-								<label for="contact-phone">Phone</label>
-							</div>
-						</fieldset>
-            
+              <legend>Preferred contact method<span class="required">*</span></legend>
+              <div>
+                <input type="radio" id="contact-email" name="preferredContact" value="email" required aria-required="true" />
+                <label for="contact-email">Email</label>
+              </div>
+              <div>
+                <input type="radio" id="contact-phone" name="preferredContact" value="phone" />
+                <label for="contact-phone">Phone</label>
+              </div>
+            </fieldset>
+      
             <label for="message">Message<span class="required">*</span></label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Send</button>
-            <p id="confirmationMessage" class="confirmation-message"></p>
+            <textarea id="message" name="message" required aria-required="true"></textarea>
+      
+            <button type="submit" aria-label="Send message">Send</button>
+            <p id="confirmationMessage" class="confirmation-message" aria-live="polite"></p> <!-- Announce confirmation -->
           </form>
-				</div>
-      </section>
+        </div>
+      </section>      
 		</main>
 		<Footer />
 		<script src="https://cdn.emailjs.com/dist/email.min.js"></script>

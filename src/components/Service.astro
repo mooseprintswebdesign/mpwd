@@ -3,22 +3,27 @@ import Button from './Button.astro';
 const { icon, heading, checklist, price } = Astro.props;
 ---
 
-<div class="service-card">
+<div class="service-card" role="region" aria-labelledby="service-heading" aria-describedby="service-description">
   <div class="icon-container">
-    <img src={icon} alt={`${heading} icon`} />
+    <img src={icon} alt={`${heading} icon`} role="img" />
   </div>
-  <h3>{heading}</h3>
-  <ul class="checklist">
-    {checklist.map((item) => (
+  <h3 id="service-heading">{heading}</h3>
+  <ul class="checklist" id="service-description">
+    {checklist.map((item, index) => (
       <li>{item}</li>
     ))}
   </ul>
   <div class="pricing">
     <p>Starting from {price}</p>
-    <Button href="/pricing" text="See Pricing" type="primary" ariaLabel="Navigate to pricing page for Mooseprints Web Design" />
-
+    <Button 
+      href="/pricing" 
+      text="See Pricing" 
+      type="primary" 
+      ariaLabel="Navigate to pricing page for Mooseprints Web Design"
+    />
   </div>
 </div>
+
 
 <style>
   .service-card {

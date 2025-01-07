@@ -1,21 +1,37 @@
 ---
 import Button from '../components/Button.astro';
 ---
-<section class="hero">
+<section class="hero" role="region" aria-labelledby="hero-heading">
   <div class="hero-content">
     <!-- Left Section: Text and CTA -->
     <div class="hero-text">
-      <h1>Mooseprints Web Design</h1>
+      <h1 id="hero-heading">Mooseprints Web Design</h1>
       <p>Custom websites for <span class="emphasis">small businesses</span> and <span class="emphasis">nonprofits</span> serving local communities.</p>
       <div class="hero-btns">
-        <Button href="#services" text="Services" type="primary" ariaLabel="Navigate to services offered by Mooseprints Web Design" />
-        <Button href="https://calendly.com/mooseprintswebdesign/initial-consultation" text="Book a consultation" type="secondary" target="_blank" ariaLabel="Book an initial consultation with Mooseprints Web Design" />
+        <Button 
+          href="#services" 
+          text="Services" 
+          type="primary" 
+          ariaLabel="Navigate to services offered by Mooseprints Web Design" 
+        />
+        <Button 
+          href="https://calendly.com/mooseprintswebdesign/initial-consultation" 
+          text="Book a consultation" 
+          type="secondary" 
+          target="_blank" 
+          ariaLabel="Book an initial consultation with Mooseprints Web Design" 
+        />
       </div>
     </div>
 
     <!-- Right Section: Image -->
     <div class="hero-image">
-      <img src="/moose.png" alt="Moose silhouette" />
+      <img 
+        src="/moose.png" 
+        alt="Moose silhouette with a simple design representing the brand" 
+        role="img" 
+        aria-label="Moose silhouette" 
+      />
     </div>
   </div>
 </section>

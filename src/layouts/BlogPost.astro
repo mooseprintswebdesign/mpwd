@@ -58,24 +58,24 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 
 	<body>
 		<Header />
-		<main>
-			<article>
+		<main role="main">
+			<article aria-labelledby="article-title">
 				<div class="hero-image">
-					{heroImage && <img width={1020} height={510} src={heroImage} alt="" />}
+					{heroImage && <img width={1020} height={510} src={heroImage} alt={heroImage ? "Abigail stands beside a gray horse, who is nuzzling her arm." : ""} />}
 				</div>
 				<div class="prose">
 					<div class="title">
 						<div class="date">
-							<FormattedDate date={pubDate} />
+							<FormattedDate date={pubDate} aria-label={`Published on ${pubDate}`} />
 							{
 								updatedDate && (
-									<div class="last-updated-on">
+									<div class="last-updated-on" aria-label={`Last updated on ${updatedDate}`}>
 										Last updated on <FormattedDate date={updatedDate} />
 									</div>
 								)
 							}
 						</div>
-						<h1>{title}</h1>
+						<h1 id="article-title">{title}</h1>
 						<hr />
 					</div>
 					<slot />
