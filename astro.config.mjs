@@ -6,7 +6,5 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: 'https://www.mooseprintswebdesign.com',
   integrations: [mdx(), sitemap()],
-  buildOptions: {
-    out: 'dist',
-  },
+  output: 'static',
 });
