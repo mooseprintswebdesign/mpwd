@@ -1,8 +1,8 @@
 ---
-title: 'Building a website for WildMoose Bakers'
-description: 'Lorem ipsum dolor sit amet'
+title: 'A recipe for success: Reimagining the WildMoose Bakers website'
+description: 'Learn more about my process creating a new website for WildMoose Bakers, an artisan bakery in Morrisville, NC. From preserving their warm, traditional vibe to crafting a dynamic, mobile-friendly design, this case study delves into the research, design, and development process behind their new digital home.'
 pubDate: 'Jul 08 2022'
-heroImage: '/blog-placeholder-3.jpg'
+heroImage: '/wildmoosebakers/hero-new.png'
 ---
 
 When I first spoke with Phil Vincenty — artisan baker and owner of WildMoose Bakers — about his work, I was humbled to learn about his incredibly long working hours and the dedication it took to transform his passion for baking bread into a living.
@@ -12,6 +12,20 @@ Making bread at WildMoose Bakers isn't just a dream job for Phil — it's a true
 With demanding hours and the constant pressure of order fulfillments and creating new recipes, it was challenging for Phil to keep his website up to date with their latest products and updates. Phil and his wife Laurel quickly created their website to establish an online presence as WildMoose Bakers gained traction, but keeping up with maintenance was difficult as their business evolved.
 
 Visiting the WildMoose Bakers website immediately evoked a sense of warmth and conveyed a passion for the products, with appetizing images of their breads and pastries accompanied by enticing descriptions. I was excited about the website's potential to draw in visitors and showcase the bakery's offerings even more effectively. I quickly began developing a plan for how I could help Phil and Laurel improve their online presentation of WildMoose Bakers to reflect their unique vision.
+
+### Table of contents
+
+1. [Research & planning](#research--planning)
+  - [Understanding the audience](#understanding-the-audience)
+  - [Identifying opportunities for improvement](#identifying-opportunities-for-improvement)
+2. [Design & development](#design--development)
+  - [Preserving the original look and feel](#preserving-the-original-look-and-feel)
+  - [Reimagining the Home page](#reimagining-the-home-page)
+  - [Dynamic products page with room to scale](#dynamic-products-page-with-room-to-scale)
+  - [Telling the story of WildMoose Bakers](#telling-the-story-of-wildmoose-bakers)
+  - [Responsive design for mobile devices](#responsive-design-for-mobile-devices)
+3. [Where we're going next](#where-were-going-next)
+
 
 ### Research & planning
 
@@ -56,7 +70,7 @@ From there, I began building the website code, bringing my sketches to life on t
 
 The original WildMoose Bakers website was designed with a lot of love, and it was important to me to preserve key elements of the creators' chosen look and feel for the website. Using the original logo and colors as a starting point, I developed a new color palette for the site that reflected the same style with some slight alterations for accessibility and sophistication.
 
-![Original and new color palettes for the WildMoose Bakers website design](/public/wildmoosebakers/colors.png)
+![Original and new color palettes for the WildMoose Bakers website design](/wildmoosebakers/colors.png)
 
 The color palette was tweaked and extended during development, at the root of the project CSS:
 
@@ -83,24 +97,24 @@ The color palette was tweaked and extended during development, at the root of th
 There was a lot to love about the hero section of the original website — the first thing you notice when you open the Home page. The bold text tells the visitor exactly what WildMoose Bakers is all about, paired with an appetizing image.
 
 **_Original website:_**
-![Hero section of the original WildMoose Bakers website](/public/wildmoosebakers/hero-original.png)
+![Hero section of the original WildMoose Bakers website](/wildmoosebakers/hero-original.png)
 
 The bakery's key selling point is the fusion of innovative recipes with traditional techniques, so I really wanted to make this point stand out. I also wanted to emphasize what it is the bakery actually sells — bread and pastries — making it readily apparent to any visitor. 
 
 To accomplish this, I decided to float the text above a darkened image and color "bread & pastries" for emphasis. I added an enticing subtext below the heading, and added a call-to-action button labeled `Learn More`, which simply scrolls the page down to the next section of the page.
 
 **_New website:_**
-![Hero section of the new WildMoose Bakers website](/public/wildmoosebakers/hero-new.png)
+![Hero section of the new WildMoose Bakers website](/wildmoosebakers/hero-new.png)
 
 On the original website, below the hero section, there's some text about the bakery's featured products.
 
 **_Original website:_**
-![Featured products section of the original WildMoose Bakers website](/public/wildmoosebakers/featured-products-original.png)
+![Featured products section of the original WildMoose Bakers website](/wildmoosebakers/featured-products-original.png)
 
 I wanted to maintain the sentiment of the text while reimagining the design and layout. Instead of using text layered over an image, I decided to include the two featured products stacked with side-by-side image and description, as well as two cards with information pulled from the original website's About page. I've also added a `See all products` button that leads to the Products page.
 
 **_New website:_**
-![Featured products section of the original WildMoose Bakers website](/public/wildmoosebakers/featured-products-new.png)
+![Featured products section of the original WildMoose Bakers website](/wildmoosebakers/featured-products-new.png)
 
 
 ##### Dynamic products page with room to scale
@@ -108,17 +122,17 @@ I wanted to maintain the sentiment of the text while reimagining the design and 
 At the time I built this website, WildMoose Bakers had two products, with incredibly appetizing images and mouth-watering descriptions! Unfortunately, on the original website, parts of the images were covered by the navigation, and visitors with limited vision or colorblindness likely would have found it difficult to read the text on this page.
 
 **_Original website:_**
-![Products page of the original WildMoose Bakers website](/public/wildmoosebakers/products-original.png)
+![Products page of the original WildMoose Bakers website](/wildmoosebakers/products-original.png)
 
 I wanted to redesign this page to really make the images and descriptions pop, and to adjust the colors and contrast so even visitors with impairments could easily read the text. I also knew that the bakery would be adding many more products in the future, so it was important to make the page dynamic — meaning that adding products wouldn't require additional code; the grid would simply expand to accommodate as many products as necessary.
 
 **_New website:_**
-![Products page of the new WildMoose Bakers website](/public/wildmoosebakers/products-new.png)
+![Products page of the new WildMoose Bakers website](/wildmoosebakers/products-new.png)
 
 I also added a new section to the products page: a customer photo gallery. I found the photos hidden in a carousel at the bottom of the original website's About page, but decided to move it to the Products page and redesign it as a grid. Here, all of the great photos are featured right alongside the other product photos, along with an invitation for existing customers to submit their own photo.
 
 **_New website:_**
-![Customer photos gallery on the new WildMoose Bakers website](/public/wildmoosebakers/customer-photos-new.png)
+![Customer photos gallery on the new WildMoose Bakers website](/wildmoosebakers/customer-photos-new.png)
 
 
 ##### Telling the story of WildMoose Bakers
@@ -126,18 +140,21 @@ I also added a new section to the products page: a customer photo gallery. I fou
 The original website had a fantastic About page including a short story of how the bakery came to be, the bakery's mission, and introduction to the two bakers: Phil and Jeff. The original page also included a couple feature cards that I moved to the Home page and the customer photo gallery that I moved to the Products page, so all that was left was to reimagine the layout of the remaining elements on the page.
 
 **_Original website:_**
-![About page on the original WildMoose Bakers website](/public/wildmoosebakers/about-original.png)
+![About page on the original WildMoose Bakers website](/wildmoosebakers/about-original.png)
 
 First, I revised the "How we got here" and "Mission" sections, making the layout more dynamic and adding checkmarks to the mission statement for visual interest. Placing the section against a plain background gives the site a modern feel consistent with the other pages.
 
 Next, I decided on a side-by-side layout for the team. I kept the years counter from the original website, which begins at 0 and rapidly ticks up to 45+ once the visitor has brought the page into view. This was a nice touch on the original website, so I wanted to give it a special place in the new design.
 
 **_New website:_**
-![About page on the new WildMoose Bakers website](/public/wildmoosebakers/about-new-1.png)
-![Our Team section of the About page on the new WildMoose Bakers website](/public/wildmoosebakers/about-new-2.png)
+![About page on the new WildMoose Bakers website](/wildmoosebakers/about-new-1.png)
+![Our Team section of the About page on the new WildMoose Bakers website](/wildmoosebakers/about-new-2.png)
 
-Inviting visitors to get in touch
 
-Responsive design for mobile devices
+##### Responsive design for mobile devices
+
+Today, many people visit websites from their phones. It was important to me to make sure the WildMoose Bakers website could be accessed from anywhere on the go. This meant ensuring my designs were responsive for smaller screens, creating a smooth experience when navigating the website on a mobile device.
 
 ### Where we're going next
+
+I'm excited to continue working with Phil, Laurel and WildMoose Bakers as they add more products and photos to their website. With a rapidly growing customer base and excitement for their products in their local community, there are so many opportunities for the bakery to build their online presence!
