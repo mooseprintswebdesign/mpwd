@@ -5,27 +5,14 @@ pubDate: 'Jul 08 2022'
 heroImage: '/wildmoosebakers/hero-new.png'
 ---
 
+
 When I first spoke with Phil Vincenty — artisan baker and owner of WildMoose Bakers — about his work, I was humbled to learn about his incredibly long working hours and the dedication it took to transform his passion for baking bread into a living.
 
-Making bread at WildMoose Bakers isn't just a dream job for Phil — it's a true labor of love. Phil's unique artisan breads and pastries not only provide energy and nourishment to consumers with organic and locally-sourced ingredients, but also bring a great joy to their customers. WildMoose Bakers takes a unique approach to baking, drawing on traditional old-world techniques to create new and innovatie breads and pastries. It was easy to see how their products quickly became a sensation in their local community of Morrisville, NC.
+Making bread at WildMoose Bakers isn't just a dream job for Phil — it's a true labor of love. Phil's unique artisan breads and pastries not only provide energy and nourishment to consumers with organic and locally-sourced ingredients, but also bring a great joy to their customers. WildMoose Bakers takes a unique approach to baking, drawing on traditional old-world techniques to create new and innovative breads and pastries. It was easy to see how their products quickly became a sensation in their local community of Morrisville, NC.
 
 With demanding hours and the constant pressure of order fulfillments and creating new recipes, it was challenging for Phil to keep his website up to date with their latest products and updates. Phil and his wife Laurel quickly created their website to establish an online presence as WildMoose Bakers gained traction, but keeping up with maintenance was difficult as their business evolved.
 
 Visiting the WildMoose Bakers website immediately evoked a sense of warmth and conveyed a passion for the products, with appetizing images of their breads and pastries accompanied by enticing descriptions. I was excited about the website's potential to draw in visitors and showcase the bakery's offerings even more effectively. I quickly began developing a plan for how I could help Phil and Laurel improve their online presentation of WildMoose Bakers to reflect their unique vision.
-
-### Table of contents
-
-1. [Research & planning](#research--planning)
-  - [Understanding the audience](#understanding-the-audience)
-  - [Identifying opportunities for improvement](#identifying-opportunities-for-improvement)
-2. [Design & development](#design--development)
-  - [Preserving the original look and feel](#preserving-the-original-look-and-feel)
-  - [Reimagining the Home page](#reimagining-the-home-page)
-  - [Dynamic products page with room to scale](#dynamic-products-page-with-room-to-scale)
-  - [Telling the story of WildMoose Bakers](#telling-the-story-of-wildmoose-bakers)
-  - [Responsive design for mobile devices](#responsive-design-for-mobile-devices)
-3. [Where we're going next](#where-were-going-next)
-
 
 ### Research & planning
 
@@ -52,7 +39,7 @@ As I reviewed the WildMoose Bakers website, I began identifying areas where the 
 
 1. Improve the overall composition of elements on the page, re-organizing sections, images and text logically to guide the visitor through information on each page.
 
-2. Pair text and images for readibilty and visibility — for example, positioning text/image pairs side-by-side or in card format.
+2. Pair text and images for readabilty and visibility — for example, positioning text/image pairs side-by-side or in card format.
 
 3. Structure calls to action (buttons) to entice the visitor to click.
 
