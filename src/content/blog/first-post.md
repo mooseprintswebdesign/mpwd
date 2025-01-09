@@ -1,7 +1,7 @@
 ---
 title: 'A recipe for success: Reimagining the WildMoose Bakers website'
 description: 'Learn more about my process creating a new website for WildMoose Bakers, an artisan bakery in Morrisville, NC. From preserving their warm, traditional vibe to crafting a dynamic, mobile-friendly design, this case study delves into the research, design, and development process behind their new digital home.'
-pubDate: 'Jul 08 2022'
+pubDate: 'Jan 09 2025'
 heroImage: '/wildmoosebakers/hero-new.png'
 ---
 

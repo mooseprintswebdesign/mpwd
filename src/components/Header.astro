@@ -38,8 +38,9 @@ import { SITE_TITLE } from '../consts';
     <div id="nav-links" class="right-nav-links" role="navigation" aria-label="Main navigation">
       <HeaderLink href="/" aria-label="Navigate to home page">Home</HeaderLink>
       <HeaderLink href="/pricing" aria-label="View pricing page">Pricing</HeaderLink>
-      <HeaderLink href="/about" aria-label="Learn more about us">About</HeaderLink>
-      <HeaderLink href="/contact" aria-label="Contact us">Contact</HeaderLink>
+      <HeaderLink href="/about" aria-label="Learn more about me">About</HeaderLink>
+      <HeaderLink href="/blog" aria-label="Read the blog">Blog</HeaderLink>
+      <HeaderLink href="/contact" aria-label="Contact me">Contact</HeaderLink>
     </div>
   </nav>
 </header>
@@ -66,13 +67,13 @@ import { SITE_TITLE } from '../consts';
 		justify-content: space-between;
 	}
 	nav a {
-		padding: 1em 0.5em;
+		padding: 1em .7em;
 		color: var(--black);
 		border-bottom: 4px solid transparent;
 		text-decoration: none;
 	}
 	nav a.active {
-		border-bottom-color: var(--accent);
+		color: var(--accent);
 	}
 
 	.left-nav-links {
