@@ -7,5 +7,4 @@ export default defineConfig({
   site: 'https://www.mooseprintswebdesign.com',
   integrations: [mdx(), sitemap()],
   output: 'static',
-  base: '/',
 });
